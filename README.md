@@ -292,7 +292,6 @@ Worker accounts are created and approved by the administrator through the Worker
 * Cloud deployment
 * Advanced reporting dashboard
 * Automatic worker-job matching
-* Booking calendar integration
 
 ---
 
