@@ -1,0 +1,267 @@
+/* =================================
+   GLOBAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6fbfa;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* =================================
+   HEADER (PEACOCK THEME)
+================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #0b6e6b,
+        #2a9d8f,
+        #76c7c0
+    );
+
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+/* USER INFO */
+#user-info {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    background: #0b6e6b;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+.logout-btn:hover {
+    background: #095754;
+    transform: translateY(-2px);
+}
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+
+    background:
+        linear-gradient(
+            rgba(11,110,107,0.55),
+            rgba(42,157,143,0.45)
+        ),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    opacity: 0.95;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.book-btn {
+    background: linear-gradient(135deg, #0b6e6b, #2a9d8f);
+    padding: 12px 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #095754, #238f83);
+}
+
+.secondary-btn {
+    background: rgba(255,255,255,0.15);
+    padding: 12px 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+/* =================================
+   SERVICES
+================================= */
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #0b6e6b;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service-item {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(11,110,107,0.18);
+    background: #f0fffd;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+.logout-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    background:#bb2d3b;
+}
+
+#user-info{
+    font-weight:bold;
+    color:white;
+}

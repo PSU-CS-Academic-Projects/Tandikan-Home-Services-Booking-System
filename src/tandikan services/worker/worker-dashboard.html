@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Worker Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="worker-dashboard.css"
+    >
+
+</head>
+
+<body>
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header class="header">
+
+    <div>
+
+        <h1>👷 Worker Dashboard</h1>
+
+        <p>
+            Manage assigned jobs and track performance
+        </p>
+
+    </div>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+
+</header>
+
+<!-- =================================
+     WORKER PROFILE
+================================= -->
+
+<section class="worker-profile">
+
+    <h2>👤 Worker Profile</h2>
+
+    <div class="profile-card">
+
+        <div class="profile-item">
+
+            <strong>Name</strong>
+
+            <span id="workerName">
+                Loading...
+            </span>
+
+        </div>
+
+        <div class="profile-item">
+
+            <strong>Email</strong>
+
+            <span id="workerEmail">
+                Loading...
+            </span>
+
+        </div>
+
+        <div class="profile-item">
+
+            <strong>Specialty</strong>
+
+            <span id="workerService">
+                Loading...
+            </span>
+
+        </div>
+
+        <div class="profile-item">
+
+            <strong>Availability</strong>
+
+            <span id="workerAvailability">
+                Loading...
+            </span>
+
+        </div>
+
+        <div class="profile-item">
+
+            <strong>Completed Jobs</strong>
+
+            <span id="workerCompleted">
+                0
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     DASHBOARD CARDS
+================================= -->
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <h3>Total Jobs</h3>
+
+        <p id="totalJobs">0</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Assigned Jobs</h3>
+
+        <p id="assignedJobs">0</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Completed Jobs</h3>
+
+        <p id="completedJobs">0</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Cancelled Jobs</h3>
+
+        <p id="cancelledJobs">0</p>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     PERFORMANCE SUMMARY
+================================= -->
+
+<section class="performance-section">
+
+    <h2>📈 Performance Summary</h2>
+
+    <div class="performance-card">
+
+        <p>
+            Track your completed services and assigned jobs.
+        </p>
+
+        <ul>
+
+            <li>
+                Total Assigned:
+                <strong id="summaryAssigned">
+                    0
+                </strong>
+            </li>
+
+            <li>
+                Total Completed:
+                <strong id="summaryCompleted">
+                    0
+                </strong>
+            </li>
+
+            <li>
+                Total Cancelled:
+                <strong id="summaryCancelled">
+                    0
+                </strong>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     ASSIGNED JOBS
+================================= -->
+
+<section class="jobs-section">
+
+    <h2>📋 Assigned Jobs</h2>
+
+    <div id="jobList">
+
+        <div class="job-card">
+
+            <h3>Loading jobs...</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     FUTURE CHART AREA
+================================= -->
+
+<section class="chart-section">
+
+    <h2>📊 Worker Statistics</h2>
+
+    <div class="chart-placeholder">
+
+        <p>
+            Worker performance chart will appear here.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+
+    <p>
+        Tandikan Services Worker Portal
+    </p>
+
+</footer>
+
+<!-- =================================
+     SCRIPT
+================================= -->
+
+<script
+    type="module"
+    src="worker-dashboard.js"
+></script>
+
+</body>
+
+</html>
