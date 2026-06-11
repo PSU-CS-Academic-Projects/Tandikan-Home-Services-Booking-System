@@ -11,7 +11,7 @@ if (!adminExists) {
 
         id: Date.now(),
 
-        name: "Admin Lenneth Arenio",
+        name: "Admin Lenneth Arenio", //Temporary name for admin
 
         email: "admin@tandikan.com",
 
