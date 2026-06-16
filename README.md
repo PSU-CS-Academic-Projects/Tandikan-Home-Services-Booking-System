@@ -279,6 +279,41 @@ Worker accounts are created and approved by the administrator through the Worker
 
 ---
 
+## Live Demo
+
+**GitHub Pages:**
+https://yourusername.github.io/Tandikan-Home-Services-Booking-System/
+
+---
+
+## Video Demonstration
+
+**Google Drive Video Demo:**
+https://drive.google.com/drive/folders/1DNIPsDFiV9rynuNyl0adzpnHQGN9kbcd?usp=sharing
+
+---
+
+## Repository Topics
+
+### Subject Topics
+
+* wst
+
+### Category Topics
+
+* web-development
+
+### Technology Topics
+
+* html
+* css
+* javascript
+* leaflet
+* openstreetmap
+
+---
+
+
 ## Future Improvements
 
 * Integration with MySQL or Firebase database
