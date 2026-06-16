@@ -282,7 +282,7 @@ Worker accounts are created and approved by the administrator through the Worker
 ## Live Demo
 
 **GitHub Pages:**
-https://yourusername.github.io/Tandikan-Home-Services-Booking-System/
+https://psu-cs-academic-projects.github.io/Tandikan-Home-Services-Booking-System/
 
 ---
 
