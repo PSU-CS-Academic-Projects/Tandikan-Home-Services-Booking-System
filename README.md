@@ -293,6 +293,23 @@ https://drive.google.com/drive/folders/1DNIPsDFiV9rynuNyl0adzpnHQGN9kbcd?usp=sha
 
 ---
 
+## Administrator Access
+
+Use the administrator login page to access the admin dashboard.
+
+**Admin Login URL:**
+
+```text
+https://github.com/PSU-CS-Academic-Projects/Tandikan-Home-Services-Booking-System/blob/main/src/tandikan-services/Authentication/admin-login.html
+```
+
+**Default Credentials:**
+
+```text
+Email: admin@tandikan.com
+Password: admin123
+```
+
 ## Repository Topics
 
 ### Subject Topics
